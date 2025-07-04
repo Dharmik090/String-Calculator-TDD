@@ -33,4 +33,10 @@ describe('Test String Calculator Method', () => {
 
     });
 
+    test('Input string contains new line delimiter between numbers', () => {
+
+        expect(add('1\n2,3')).toBe(6);
+
+    })
+
 });
