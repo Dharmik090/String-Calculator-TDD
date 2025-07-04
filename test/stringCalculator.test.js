@@ -45,4 +45,10 @@ describe('Test String Calculator Method', () => {
 
     });
 
+    test('Input string contains delimiter of any length and numbers in separate lines', () => {
+
+        expect(add('//[:)]\n1:)2:)3')).toBe(6);
+
+    });
+
 });
