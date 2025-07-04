@@ -1,8 +1,13 @@
 function add(numbers = '') {
 
+    if (numbers === '')
+        return 0;
+
     let sum = 0;
     const delimiters = [',', '\n'];
     const negativeNumbers = [];
+
+    let cutIndex = 0;
 
     if (numbers.startsWith('//')) {
         if (numbers[2] === '[') {
@@ -11,16 +16,20 @@ function add(numbers = '') {
             const customDelimiter = numbers.substring(start, end);
 
             delimiters.push(customDelimiter);
-            numbers = numbers.substring(end + 2);
+            cutIndex = end + 2;
         } else {
             delimiters.push(numbers.substring(2, 3));
-            numbers = numbers.substring(4);
+            cutIndex = 4;
         }
     }
 
-    const delimiterRegex = new RegExp(`[${delimiters.join('')}]`);
+    numbers = numbers.slice(cutIndex);
 
-    numbers = numbers.split(delimiterRegex);
+    for (const delimiter of delimiters) {
+        numbers = numbers.split(delimiter).join(',');
+    }
+
+    numbers = numbers.split(',');
 
     for (let number of numbers) {
         let value = parseInt(number || '0', 10);
