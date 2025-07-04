@@ -50,5 +50,11 @@ describe('Test String Calculator Method', () => {
         expect(add('//[:)]\n1:)2:)3')).toBe(6);
 
     });
+    
+    test('Input string contains negative numbers', () => {
+
+        expect(() => add('//;\n-1;-2')).toThrow(new Error('negative numbers not allowed -1, -2'));
+
+    });
 
 });
