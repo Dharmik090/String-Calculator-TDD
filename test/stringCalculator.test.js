@@ -21,4 +21,10 @@ describe('Test String Calculator Method', () => {
 
     });
 
+    test('Input string with two comma-separated numbers returns correct sum', () => {
+
+        expect(add('1,5')).toBe(6);
+
+    });
+
 });
