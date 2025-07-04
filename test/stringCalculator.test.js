@@ -27,4 +27,10 @@ describe('Test String Calculator Method', () => {
 
     });
 
+    test('Input string with any amount of numbers returns correct sum', () => {
+
+        expect(add('2,1,4,7,3')).toBe(17);
+
+    });
+
 });
