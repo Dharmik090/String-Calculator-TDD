@@ -1,3 +1,5 @@
+const add = require('../main/stringCalculator');
+
 
 describe('Test String Calculator Method', () => {
 
