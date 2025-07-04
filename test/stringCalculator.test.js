@@ -37,6 +37,12 @@ describe('Test String Calculator Method', () => {
 
         expect(add('1\n2,3')).toBe(6);
 
-    })
+    });
+
+    test('Input string contains delimiter and numbers in separate lines', () => {
+
+        expect(add('//;\n1;2')).toBe(3);
+
+    });
 
 });
