@@ -1,9 +1,13 @@
-function add( numbers = '' ) {
+function add(numbers = '') {
 
-    const [number1, number2] = numbers.split(',');
-    
-    return parseInt(number1 || '0', 10) + parseInt(number2 || '0', 10);
-    
+    let sum = 0;
+    numbers = numbers.split(',');
+
+    for (let number of numbers) {
+        sum = sum + parseInt(number || '0', 10);
+    }
+
+    return sum;
 }
 
 module.exports = add;
