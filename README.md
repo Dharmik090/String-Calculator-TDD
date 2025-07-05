@@ -58,6 +58,9 @@ This leads to **clean, modular, and well-tested code**.
 ## 🚀 How to Run
 
 ```bash
+# Clone
+git clone https://github.com/Dharmik090/String-Calculator-TDD.git
+
 # Install dependencies
 npm install
 
