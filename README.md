@@ -60,6 +60,7 @@ This leads to **clean, modular, and well-tested code**.
 ```bash
 # Clone
 git clone https://github.com/Dharmik090/String-Calculator-TDD.git
+cd .\String-Calculator-TDD\
 
 # Install dependencies
 npm install
@@ -73,4 +74,5 @@ npm test
 ## References
 
 - [https://youtu.be/qkblc5WRn-U](https://youtu.be/qkblc5WRn-U)
+- [https://osherove.com/tdd-kata-1/](https://osherove.com/tdd-kata-1/)
 - [https://www.freecodecamp.org/news/an-introduction-to-test-driven-development-c4de6dce5c/](https://www.freecodecamp.org/news/an-introduction-to-test-driven-development-c4de6dce5c/)
